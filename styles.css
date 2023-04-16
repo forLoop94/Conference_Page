@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, 'Times New Roman', Times, serif;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  justify-content: center;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+nav {
+  height: 6rem;
+}
+
+.menu-bar{
+  height: 0.3rem;
+  background-color: rgb(104, 96, 96);
+  margin: 5px;
+  width: 2rem;
+}
+
+header {
+  background: url('images/home-bg-desk.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 80vh;
+  padding: 1rem 2.5rem;
+}
+
+h1{
+  font-size: 42px;
+  font-weight: 800;
+  color: rgb(222, 25, 25);
+  background: transparent;
+}
+
+.main-paragraph {
+  margin: 3rem 0rem;
+  padding: 1rem;
+  background-color: rgb(244, 244, 244);
+  border: 2px solid white;
+}
