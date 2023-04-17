@@ -52,3 +52,87 @@ h1{
   background-color: rgb(244, 244, 244);
   border: 2px solid white;
 }
+
+.sub-section-black {
+  background-color: rgb(28, 27, 27);
+  color: white;
+}
+
+ .sub-section-black, .sub-section-white{
+  padding: 1rem;
+}
+
+.section-header-white, .section-header-black {
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.sub-section-text-black, sub-section-text-white {
+  margin-top: 1rem;
+  font-size: 12px;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.program-list div {
+  margin: 0.5rem 0rem;
+  background-color: rgb(42, 40, 40);
+  padding: 1rem;
+
+}
+
+.program-list img, h3, p {
+  margin: 0rem 1rem;
+}
+
+.program-icons {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.join-btn {
+  margin: 1rem 0rem;
+  justify-content: center;
+}
+
+.join-btn p {
+  background-color: rgba(236, 13, 39, 0.945);
+  padding: 1.5rem;
+}
+
+.line {
+  height: 0.2rem;
+  width: 2rem;
+  background-color: rgb(235, 47, 47);
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.speaker-image {
+  width: 40%;
+}
+
+.speaker-details {
+  margin: 0rem 1rem;
+}
+
+.speaker-details h3, div, p {
+  margin: 0rem;
+}
+
+#speakers-section article {
+  margin: 1.5rem 0rem;
+}
+
+.red-color {
+  color: red;
+}
