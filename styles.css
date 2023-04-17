@@ -20,41 +20,73 @@ main {
 
 nav {
   height: 6rem;
+  padding: 1.5rem ;
+  background-color: rgba(43, 40, 40, 0.5);
+}
+
+#menu-btn {
+  position: fixed;
 }
 
 .menu-bar{
-  height: 0.3rem;
-  background-color: rgb(104, 96, 96);
+  height: 0.35rem;
+  background-color: #f0e890;
   margin: 5px;
   width: 2rem;
+  border-radius: 5px;
 }
 
 header {
-  background: url('images/home-bg-desk.png');
+  background: url('images/x-section-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   height: 80vh;
-  padding: 1rem 2.5rem;
+}
+
+.about-main-title, .about-main-paragraph {
+  text-align: center;
 }
 
 h1{
-  font-size: 42px;
+  font-size: 43px;
   font-weight: 800;
-  color: rgb(222, 25, 25);
-  background: transparent;
+  color: #f8bc08;
+  font-family: 'lato';
+  background-color: rgba(43, 40, 40, 0.5);
+  padding: 0rem 2rem;
 }
 
 .main-paragraph {
-  margin: 3rem 0rem;
-  padding: 1rem;
-  background-color: rgb(244, 244, 244);
-  border: 2px solid white;
+  margin: 2rem 2rem 0rem 2rem;
+  padding: 2rem;
+  background-color: rgba(15, 14, 14, 0.7);
+  color: white;
+}
+
+.program-date {
+  padding: 3rem 2rem;
+  background-color: rgba(43, 40, 40, 0.5);
+  height: 12rem;
+}
+
+#bold-text {
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 .sub-section-black {
   background-color: rgb(28, 27, 27);
+  color: white;
+}
+
+.sub-section-header-black {
+  color: black;
+}
+
+.section-text-white {
   color: white;
 }
 
@@ -67,7 +99,24 @@ h1{
   margin: 1rem 0rem;
 }
 
-.sub-section-text-black, sub-section-text-white {
+.section-header-white {
+  color: #E7B10A;
+}
+
+
+.sub-section-text-black {
+  margin-top: 1rem;
+  font-size: 12px;
+  color: black;
+}
+
+.contact a {
+  font-size: 12px;
+  color: #f8bc08;
+}
+
+.sub-section-text-white {
+  color: white;
   margin-top: 1rem;
   font-size: 12px;
 }
@@ -80,7 +129,6 @@ h1{
   margin: 0.5rem 0rem;
   background-color: rgb(42, 40, 40);
   padding: 1rem;
-
 }
 
 .program-list img, h3, p {
@@ -98,14 +146,14 @@ h1{
 }
 
 .join-btn p {
-  background-color: rgba(236, 13, 39, 0.945);
+  background-color: #898121;
   padding: 1.5rem;
 }
 
 .line {
   height: 0.2rem;
   width: 2rem;
-  background-color: rgb(235, 47, 47);
+  background-color: #898121;
   margin: 0rem 0rem 0.5rem 0rem;
 }
 
@@ -129,10 +177,79 @@ h1{
   margin: 0rem;
 }
 
-#speakers-section article {
+#speakers-section {
+  padding: 1rem .5rem;
+}
+
+.sub-section-white {
+  background-color: white;
+}
+
+.cards {
   margin: 1.5rem 0rem;
+  padding: 1rem;
+  color: white;
+  border-radius: 5px;
 }
 
 .red-color {
-  color: red;
+  color: #f8bc08;
 }
+
+.simple-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.simple-cards > div {
+  margin: 1rem 0rem;
+}
+
+.botswana {
+  background: url('images/botswana.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 10px;
+}
+
+.egypt {
+  background: url('images/egypt.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 30vh;
+  width: 80vw;
+  border-radius: 10px;
+}
+
+.simple-cards-details {
+  color: white;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 3rem 0rem;
+}
+
+#partners li {
+  list-style-type: none;
+  margin: 1rem 2rem;
+}
+
+footer div {
+  margin-right: 2rem;
+}
+
+.footer-sub {
+  margin: 0;
+}
+
+.desktop-nav {
+  display: none;
+}
+
