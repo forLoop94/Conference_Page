@@ -5,13 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>West African Fiction Festival-About</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="flex">
   <main>
-    <header>
+    <header class="header">
       <nav class="mobile-nav">
         <div id="menu-btn" data-menu>
           <div class="menu-bar"></div>
@@ -20,22 +22,25 @@
         </div>
       </nav>
       <nav class="desktop-nav flex display-none">
-        <a href="#"><img class="logo" src="images/logo2-removebg-preview.png" alt=""></a>
+        <a href="index.html"><img class="logo" src="images/logo2-removebg-preview.png" alt=""></a>
         <ul class="flex">
-          <li>About</li>
-          <li>Program</li>
-          <li>Featured Speakers</li>
-          <li>partners</li>
+          <li><a href="#main-paragragh">Contact</a></li>
+          <li><a href="#special-mentions">Logo Statement</a></li>
+          <li><a href="#see-past-header">Past Festivals</a></li>
+          <li><a href="#partners">Partners</a></li>
         </ul>
       </nav>
       <section class="headline-section">
         <article>
           <h1 class="main-title about-main-title">AFRICAN FICTION FESTIVAL 2023</h1>
+          <div class="middle-underline flex justify-center">
+            <div class="line"></div>
+          </div>
           <div class="main-paragragh-container">
-            <p class="main-paragraph about-main-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium harum nostrum corporis alias beatae dolores hic, voluptatum, nobis et quaerat culpa nulla, animi at explicabo eum quae maiores? Quaerat molestiae ratione provident ipsum hic, tenetur laborum? Ut?</p>
+            <p id="main-paragragh" class="main-paragraph about-main-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium harum nostrum corporis alias beatae dolores hic, voluptatum, nobis et quaerat culpa nulla, animi at explicabo eum quae maiores? Quaerat molestiae ratione provident ipsum hic, tenetur laborum? Ut?</p>
           </div>
         </article>
-        <article class="contact program-date">
+        <article id="contact" class="contact">
           <p class="sub-section-text-white about-main-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ducimus.</p>
           <div class="flex justify-center">
             <a href="#">FicFest@gmail.com</a>
@@ -45,29 +50,30 @@
     </header>
     <section>
       <article id="special-mentions" class="sub-section-white">
-        <h2 class="section-header-black">Special Mentions</h2>
+        <h2 class="section-header-black">African Fiction Festivals 2023 Logo</h2>
         <div class="middle-underline flex justify-center">
           <div class="line"></div>
         </div>
-        <p class="sub-section-paragraph-black about-main-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis est ipsa repellat?</p>
-        <div>
-          <article class="cards flex">
+        <p class="sub-section-paragraph-black about-main-paragraph">The logo of CC Global Summit 2015 was decided through the logo competition from 8, June to 7, July. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt et ipsum sunt modi blanditiis repudiandae, quo nesciunt minima nulla vitae numquam quisquam quam accusamus aut!</p>
+        <!-- <div class="cards-container">
+          <div class="cards flex">
             <img class="speaker-image" src="images/images.jpeg" alt="Speaker's Image">
             <div class="speaker-details">
               <h3 class="sub-section-header-black">Wole Soyinka</h3>
               <p class="sub-section-text-black red-color"><i>Nobel Laurette 1975</i></p>
               <p class="sub-section-text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit porro officiis ea eligendi corporis excepturi.</p>
             </div>
-          </article>
-          <article class="cards flex">
+          </div>
+          <div class="cards flex">
             <img class="speaker-image" src="images/chimamanda.jpeg" alt="Speaker's Image">
             <div class="speaker-details">
               <h3 class="sub-section-header-black">Chimamanda Ngozi Adichie</h3>
               <p class="sub-section-text-black red-color"><i>Half 0f the Yellow sun, Purple Hibiscus</i></p>
               <p class="sub-section-text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit porro officiis ea eligendi corporis excepturi.</p>
             </div>
-          </article>
-        </div>
+          </div>
+        </div> -->
+        <div class="logo-image flex justify-center"><img src="images/logo2-removebg-preview.png" alt=""></div>
       </article>
       <article>
         <div id="see-past-header" class="sub-section-white">
@@ -75,7 +81,7 @@
           <div class="middle-underline flex justify-center">
             <div class="line"></div>
           </div>
-          <p class="sub-section-paragraph-black about-main-paragragh">The last two Fiction Festivals were held in Botswana and Egypt. Have a peak below</p>
+          <p class="sub-section-paragraph-black about-main-paragraph">The last two Fiction Festivals were held in Botswana and Egypt. Have a peak below</p>
           <div class="simple-cards">
             <div class="botswana flex align-center justify-center">
               <div class="simple-cards-details">
@@ -93,27 +99,31 @@
         </div>
       </article>
     </section>
-    <section id="partners" class="sub-section-black">
+    <section id="partners" class="sub-section-black partners-about">
       <h2 class="section-header-white">Partners</h2>
       <div class="middle-underline flex justify-center">
         <div class="line"></div>
       </div>
       <ul class="flex justify-center">
-        <li class="first-icon">Icon 1</li>
-        <li class="second-icon">Icon 1</li>
-        <li class="third-icon">Icon 1</li>
-      </ul>
+        <li><img class="partner-logo" src="images/netflix-logo-removebg-preview.png" alt=""></li>
+        <li><img class="partner-logo" src="images/gt-logo-removebg-preview.png" alt=""></li>
+        <li><img class="partner-logo" src="images/glo-logo-removebg-preview.png" alt=""></li>
+      </ul>  
       <ul class="flex justify-center">
-        <li class="first-icon">Icon 1</li>
-        <li class="second-icon">Icon 1</li>
-        <li class="third-icon">Icon 1</li>
+        <li><img class="partner-logo" src="images/google-logo-removebg-preview.png" alt=""></li>
+        <li><img class="partner-logo" src="images/airbnb-logo-removebg-preview.png" alt=""></li>
       </ul>
     </section>
-    <footer class="flex sub-section-white justify-center">
-      <div id="footer-logo"><strong>FisFest Nigeria</strong></div>
+    <footer class="flex sub-section-white justify-center footer-about">
+      <div id="footer-logo">
+        <img class="footer-logo" src="images/logo2-removebg-preview.png" alt="">
+        <div class="logo-text">
+          <p>African Fiction Festival</p>
+        </div>
+      </div>
       <div class="copyrights">
-        <div class="sub-section-text-black footer-sub">2023 FicFest Nigeria</div>
-        <div class="sub-section-text-black footer-sub">Some Rights Reserved</div>
+        <div class="sub-section-text-black footer-sub">2023 FicFest Nigeria Some Rights Reserved</div>
+        <div class="sub-section-text-black footer-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,</div>
       </div>
     </footer>
   </main>

@@ -41,6 +41,16 @@ header {
   height: 100vh;
 }
 
+/* .header-home {
+  background: linear-gradient(rgba(73, 70, 70, 0.5), rgba(73, 70, 70, 0.5)),
+  url('images/main-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+} */
+
 .about-main-title, .about-main-paragraph {
   text-align: center;
 }
@@ -48,7 +58,7 @@ header {
 h1{
   font-size: 43px;
   font-weight: 800;
-  color: rgb(241, 43, 43);
+  color: #FF5438;
   font-family: 'lato';
   background-color: rgba(73, 70, 70, 0.5);
   padding: 2rem;
@@ -76,12 +86,17 @@ h1{
 }
 
 .sub-section-black {
-  background-color: rgb(28, 27, 27);
+  background-color: #414246;
   color: white;
 }
 
 .sub-section-header-black {
-  color: black;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #2C2C2C;
 }
 
 .section-text-white {
@@ -104,12 +119,19 @@ h1{
 .sub-section-text-black {
   margin-top: 1rem;
   font-size: 12px;
-  color: black;
+  color: #838383;
+  ;
 }
+
+.contact {
+  padding: 2rem 0rem;
+  background-color: rgb(0, 0, 0, 0.4);
+  height: 12rem;
+ }
 
 .contact a {
   font-size: 12px;
-  color: #f8bc08;
+  color: white;
 }
 
 .sub-section-text-white {
@@ -121,6 +143,16 @@ h1{
 .flex-column {
   flex-direction: column;
 }
+
+/* #program-section {
+  background: url('images/program-section-bg-removebg-preview.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+  height: 100vh;
+  background-color: #ff4f38;
+} */
 
 .program-list div {
   margin: 0.5rem 0rem;
@@ -143,14 +175,15 @@ h1{
 }
 
 .join-btn p {
-  background-color: #898121;
+  background-color: #ff4f38;
   padding: 1.5rem;
 }
 
 .line {
   height: 0.2rem;
   width: 2rem;
-  background-color: rgb(241, 43, 43);
+  background-color: #A04038;
+  ;
   margin: 0rem 0rem 1.5rem 0rem;
 }
 
@@ -182,6 +215,12 @@ h1{
   background-color: white;
 }
 
+.logo-image {
+  margin: 1rem 0rem 4rem 0rem;
+  border: 1px solid rgb(230, 223, 223);
+  padding: 2rem;
+}
+
 .cards {
   margin: 1.5rem 0rem;
   padding: 1rem;
@@ -190,67 +229,77 @@ h1{
 }
 
 .red-color {
-  color: #f8bc08;
+  color: #FF5438;
+  ;
 }
 
 .simple-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 2rem 10vw;
 }
 
 .simple-cards > div {
   margin: 1rem 0rem;
+  height: 40vh;
 }
 
 .botswana {
-  background: url('images/botswana.jpg');
+  background: linear-gradient(rgb(240, 6, 6, 0.4), rgb(240, 6, 6, 0.4)),
+  url('images/botswana.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  height: 30vh;
-  width: 80vw;
-  border-radius: 10px;
 }
 
 .egypt {
-  background: url('images/egypt.jpg');
+  background: linear-gradient(rgb(240, 6, 6, 0.4), rgb(240, 6, 6, 0.4)), url('images/egypt.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  height: 30vh;
-  width: 80vw;
-  border-radius: 10px;
 }
 
 .simple-cards-details {
   color: white;
   text-align: center;
-  background-color: rgb(0, 0, 0, 0.5);
   width: 100%;
-  padding: 3rem 0rem;
 }
 
 #partners li {
   list-style-type: none;
-  margin: 1rem 2rem;
+  margin: 0rem 2rem;
 }
 
 footer div {
   margin-right: 2rem;
 }
 
-.footer-sub {
-  margin: 0;
+.footer-logo {
+  height: 70px;
 }
 
-/* footer, .desktop-nav, .desktop-partners {
-  display: none;
-} */
+/* ...... */
+footer {
+  height: 7rem;
+ }
 
-.display-none {
+ #footer-logo {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ .logo-text {
+  display: flex;
+  align-items: center;
+ }
+
+/* ......... */
+
+.partner-logo {
+  height: 4rem;
+ }
+
+.display-none, .partners-home, .footer-home, .desktop-program-section-footer, .footer-text {
   display: none;
 }
 
@@ -270,9 +319,15 @@ footer div {
   list-style-type: none;
   margin-right: 1rem;
   align-items: center;
+  cursor: pointer;
  }
 
- .desktop-partners {
+ .desktop-nav a {
+  text-decoration: none;
+  color: white;
+ }
+
+ .desktop-partners, .partners-home {
   display: block;
  }
 
@@ -282,7 +337,7 @@ footer div {
   background: transparent;
  }
 
- .mobile-nav {
+ .mobile-nav, .partners-about, .join-btn {
   display: none;
  }
 
@@ -313,6 +368,14 @@ footer div {
   width: 50%;
  }
 
+ #program-section {
+  padding-bottom: 4rem;
+ }
+
+ .desktop-program-section-footer, .footer-home {
+  display: flex;
+ }
+
  .program-list {
   flex-direction: row;
   padding: 2rem;
@@ -332,13 +395,22 @@ footer div {
   text-align: center;
  }
 
+ .desktop-program-section-footer p {
+  text-decoration: underline;
+ }
+
  .cards-container {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: repeat(3, auto);
  }
 
- footer {
+ .footer-about {
+  background-color: #2C2C2C;
+  color: white;
+ }
+
+ .footer-text{
   display: block;
  }
 
@@ -357,5 +429,25 @@ footer div {
  .about-main-paragraph {
   margin: 0rem;
  }
+
+ .simple-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2rem;
+ }
+
+.simple-cards div {
+  width: 35vw;
+}
+
+ #special-mentions {
+  padding: 5rem 25% 0rem 25%;
+ }
+
+ #speakers-section {
+  padding: 0rem 7rem;
+ }
+
 
 }
