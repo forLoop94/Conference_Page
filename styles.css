@@ -117,10 +117,15 @@ h1{
 }
 
 .sub-section-text-black {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  font-size: 12px;
+  color: black;
+}
+
+.sub-section-text-grey {
+  /* margin-top: 1rem; */
   font-size: 12px;
   color: #838383;
-  ;
 }
 
 .contact {
@@ -179,12 +184,18 @@ h1{
   padding: 1.5rem;
 }
 
-.line {
+.line, .line-grey {
   height: 0.2rem;
   width: 2rem;
   background-color: #A04038;
-  ;
   margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.line-grey {
+  background-color: rgb(192, 172, 172);
+  height: 0.1rem;
+  width: 1.5rem;
+  margin: 1rem 0rem;
 }
 
 .justify-center {
@@ -208,7 +219,22 @@ h1{
 }
 
 #speakers-section {
-  padding: 1rem .5rem;
+  padding: 1rem .5rem 2rem 0.5rem;
+}
+
+.see-more {
+  border: 1px solid rgb(165, 161, 161);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.see-more div {
+  font-size: 13px;
+  color: #2C2C2C;
+}
+
+.fa-angle-down {
+  color: #FF5438;
 }
 
 .sub-section-white {
@@ -226,6 +252,7 @@ h1{
   padding: 1rem;
   color: white;
   border-radius: 5px;
+  display: flex;
 }
 
 .red-color {
@@ -345,7 +372,7 @@ footer {
   height: 4rem;
  }
 
-.display-none, .partners-home, .footer-home, .desktop-program-section-footer, .footer-text {
+.display-none, .partners-home, .footer-home, .desktop-program-section-footer, .footer-text, .desktop-cards {
   display: none;
 }
 
@@ -383,7 +410,7 @@ footer {
   background: transparent;
  }
 
- .mobile-nav, .partners-about, .join-btn {
+ .mobile-nav, .partners-about, .join-btn, .mobile-cards, .see-more {
   display: none;
  }
 
@@ -418,7 +445,7 @@ footer {
   padding-bottom: 4rem;
  }
 
- .desktop-program-section-footer, .footer-home {
+ .desktop-program-section-footer, .footer-home, .desktop-cards {
   display: flex;
  }
 
