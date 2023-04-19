@@ -18,22 +18,37 @@ main {
   width: 100%;
 }
 
+
+
 nav {
-  height: 3rem;
-  padding: 0.5rem 1.5rem;
-  background-color: rgba(183, 174, 174, 0.7);
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 6rem;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 45%;
+}
+
+.logo-mobile {
+  height: 40px;
 }
 
 .menu-bar{
   height: 0.35rem;
-  background-color: #242421;
+  background-color: #6b6b69;
   margin: 5px;
   width: 2rem;
   border-radius: 5px;
 }
 
+.pre-header {
+  color: #FF5438;
+  font-size: 30px;
+}
+
 header {
-  background: url('images/x-section-bg.jpg');
+  background: url('images/home-bg-desk.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,17 +56,20 @@ header {
   height: 100vh;
 }
 
-/* .header-home {
-  background: linear-gradient(rgba(73, 70, 70, 0.5), rgba(73, 70, 70, 0.5)),
-  url('images/main-bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  height: 100vh;
-} */
+.headline-section {
+  padding: 10rem 1rem;
+}
 
-.about-main-title, .about-main-paragraph {
+.headline-section-about {
+  padding: 5rem 1rem;
+}
+
+.divider {
+  border-top: 1px solid #e5dfdf;
+  width: 100%;
+}
+
+.about-main-title, .about-main-paragraph, .pre-header-about, .text-center{
   text-align: center;
 }
 
@@ -60,32 +78,37 @@ h1{
   font-weight: 800;
   color: #FF5438;
   font-family: 'lato';
-  background-color: rgba(73, 70, 70, 0.5);
-  padding: 2rem;
+  /* background-color: rgba(73, 70, 70, 0.5); */
+  padding: 0rem;
 }
 
 .main-paragraph {
-  margin: 0rem 2rem;
-  padding: 2rem;
-  background-color: rgba(183, 174, 174, 0.7);
+  margin: 2rem 0rem;
+  line-height: 25px;
+  padding: 1rem;
+  background-color: #f8f8f8;
   color: black;
   border: 2px solid white;
 }
 
-.program-date {
-  padding: 3rem 2rem;
-  background-color: rgba(43, 40, 40, 0.5);
-  height: 12rem;
+.about-main-paragraph {
+  margin: 7rem 2rem 2rem 2rem;
 }
 
 #bold-text {
-  color: white;
+  color: #595959;
   font-weight: 800;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 0.3rem; */
+  font-family: lato;
 }
 
 .sub-section-black {
+  background-color: #282B32;
+  color: white;
+}
+
+.sub-section-grey {
   background-color: #414246;
   color: white;
 }
@@ -128,15 +151,9 @@ h1{
   color: #838383;
 }
 
-.contact {
-  padding: 2rem 0rem;
-  background-color: rgb(0, 0, 0, 0.4);
-  height: 12rem;
- }
-
-.contact a {
-  font-size: 12px;
-  color: white;
+.contact p {
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .sub-section-text-white {
@@ -161,27 +178,33 @@ h1{
 
 .program-list div {
   margin: 0.5rem 0rem;
-  background-color: rgb(42, 40, 40);
-  padding: 1rem;
+  background-color: #3B3E45;
+  padding: 0.5rem;
 }
 
 .program-list img, h3, p {
   margin: 0rem 1rem;
 }
 
+.program-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .program-icons {
-  width: 3.5rem;
   height: 3.5rem;
 }
 
 .join-btn {
   margin: 1rem 0rem;
   justify-content: center;
+  margin: 2rem;
 }
 
 .join-btn p {
   background-color: #ff4f38;
-  padding: 1.5rem;
+  padding: 1.5rem 6rem;
 }
 
 .line, .line-grey {
@@ -222,6 +245,10 @@ h1{
   padding: 1rem .5rem 2rem 0.5rem;
 }
 
+.grey-text {
+  color: #838383;
+}
+
 .see-more {
   border: 1px solid rgb(165, 161, 161);
   padding: 0.5rem;
@@ -242,7 +269,7 @@ h1{
 }
 
 .logo-image {
-  margin: 1rem 0rem 4rem 0rem;
+  margin: 3rem 0rem 2rem 0rem;
   border: 1px solid rgb(230, 223, 223);
   padding: 2rem;
 }
@@ -351,7 +378,7 @@ footer {
  }
 
  .menu-list li{
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
   display: flex;
   justify-content: center;
 
@@ -372,20 +399,47 @@ footer {
   height: 4rem;
  }
 
-.display-none, .partners-home, .footer-home, .desktop-program-section-footer, .footer-text, .desktop-cards {
+.display-none, .partners-home, .footer-home, .desktop-program-section-footer, .footer-text, .desktop-cards, .pre-nav {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
- .desktop-nav {
+ .pre-nav {
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 1.5rem;
+  align-items: center;
+  padding: 0rem 17%;
+  position: fixed;
+ }
+
+ .fa-facebook, .fa-twitter {
   color: white;
+ }
+
+ .pre-nav a {
+  margin-right: 10px;
+  text-decoration: none;
+ }
+ 
+.campaign {
+  border: 3px solid #FF5438;
+  margin-left: 6rem;
+  color: #FF5438;
+  padding: 0.6rem;
+  font-size: 12px;
+}
+
+.desktop-nav {
+  display: flex;
   justify-content: space-between;
-  padding: 1rem 10%;
-  background-color: rgba(4, 4, 4, 0.8);
+  padding: 0.5rem 15% 0.5rem 12%;
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
+  margin-top: 1.5rem;
  }
 
  .desktop-nav ul, li {
@@ -397,7 +451,7 @@ footer {
 
  .desktop-nav a {
   text-decoration: none;
-  color: white;
+  color: #868686;
  }
 
  .desktop-partners, .partners-home {
@@ -414,21 +468,24 @@ footer {
   display: none;
  }
 
+ .pre-header {
+  padding: 0rem 10%;
+ }
+
  header {
   height: 100vh;
  }
 
  .headline-section {
-  padding-top: 10%;
+  padding-top: 15%;
  }
 
  h1 {
   font-size: 4rem;
-  background-color: transparent;
  }
 
   .program-date {
-  padding: 2rem 15% 0rem 10%;
+  padding: 0rem 15% 0rem 10%;
  }
 
  .main-title {
@@ -437,7 +494,7 @@ footer {
 
  .main-paragraph {
   padding: 1rem;
-  margin: 2rem 0rem 0rem 10%;
+  margin-left: 10%;
   width: 50%;
  }
 
@@ -451,12 +508,12 @@ footer {
 
  .program-list {
   flex-direction: row;
-  padding: 2rem;
+  padding: 2rem 10%;
  }
 
  .program-list div {
   flex-direction: column;
-  padding: 0.1rem;
+  padding: 0rem 0rem 1rem 0rem;
   margin: 0.2rem;
  }
 
@@ -479,8 +536,13 @@ footer {
  }
 
  .footer-about {
+  padding: 1rem 20%;
+ }
+
+ .footer-about, .footer-about div {
   background-color: #2C2C2C;
   color: white;
+  flex: 1;
  }
 
  .footer-text{
