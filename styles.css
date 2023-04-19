@@ -293,6 +293,52 @@ footer {
   align-items: center;
  }
 
+ /* .....menu...... */
+
+ .menu {
+  padding: 5rem;
+  background: linear-gradient(rgba(73, 70, 70, 0.5), rgba(73, 70, 70, 0.5)),
+  url('images/main-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+ }
+
+ .close {
+  justify-content: flex-end;
+  color: #A04038;
+  font-size: 24px;
+  cursor: pointer;
+ }
+
+ .menu-list {
+  list-style-type: none;
+  background-color: rgb(250, 247, 247, 0.3);
+  padding: 1rem;
+  border: 2px solid white;
+ }
+
+ .menu-list li{
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+ .menu-list a{
+  text-decoration: none;
+  color: black;
+  /* margin: 3rem 0rem; */
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
 /* ......... */
 
 .partner-logo {
