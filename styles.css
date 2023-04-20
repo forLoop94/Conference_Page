@@ -78,7 +78,6 @@ h1{
   font-weight: 800;
   color: #FF5438;
   font-family: 'lato';
-  /* background-color: rgba(73, 70, 70, 0.5); */
   padding: 0rem;
 }
 
@@ -89,10 +88,11 @@ h1{
   background-color: #f8f8f8;
   color: black;
   border: 2px solid white;
+  font-size: 1.2rem;
 }
 
 .about-main-paragraph {
-  margin: 7rem 2rem 2rem 2rem;
+  margin: 1rem 0rem 0rem 2rem;
 }
 
 #bold-text {
@@ -140,13 +140,11 @@ h1{
 }
 
 .sub-section-text-black {
-  /* margin-top: 1rem; */
   font-size: 12px;
   color: black;
 }
 
 .sub-section-text-grey {
-  /* margin-top: 1rem; */
   font-size: 12px;
   color: #515151;;
 }
@@ -154,6 +152,10 @@ h1{
 .contact p {
   margin-bottom: 0.5rem;
   text-align: center;
+}
+
+.contact a {
+  font-weight: 700;
 }
 
 .sub-section-text-white {
@@ -166,16 +168,6 @@ h1{
 .flex-column {
   flex-direction: column;
 }
-
-/* #program-section {
-  background: url('images/program-section-bg-removebg-preview.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: scroll;
-  height: 100vh;
-  background-color: #ff4f38;
-} */
 
 .program-list div {
   margin: 0.5rem 0rem;
@@ -213,6 +205,10 @@ h1{
   width: 2rem;
   background-color: #A04038;
   margin: 0rem 0rem 1.5rem 0rem;
+}
+
+.pad-top {
+  margin-top: 2.5rem;
 }
 
 .line-grey {
@@ -333,7 +329,6 @@ footer div {
   height: 70px;
 }
 
-/* ...... */
 footer {
   height: 7rem;
  }
@@ -400,7 +395,7 @@ footer {
   height: 4rem;
  }
 
-.display-none, .partners-home, .footer-home, .desktop-program-section-footer, .footer-text, .desktop-cards, .pre-nav {
+.display-none, .partners-home, .footer-home, .desktop-program-section-footer, .footer-text, .desktop-cards, .pre-nav, .pad-top {
   display: none;
 }
 
@@ -456,7 +451,7 @@ footer {
   font-weight: 700;
  }
 
- .desktop-partners, .partners-home {
+ .desktop-partners, .partners-home, .pad-top {
   display: block;
  }
 
@@ -478,6 +473,10 @@ footer {
   height: 100vh;
  }
 
+ .pad-top {
+  margin: 0;
+ }
+
  .headline-section {
   padding-top: 12%;
  }
@@ -490,7 +489,7 @@ footer {
   font-size: 3.5rem;
  }
 
-  .program-date {
+.program-date {
   padding: 0rem 15% 0rem 10%;
  }
 
@@ -568,7 +567,7 @@ footer {
  }
 
  .about-main-paragraph {
-  margin: 0rem;
+  margin: 0rem 0rem 2rem 0rem;
  }
 
  .simple-cards {
@@ -583,12 +582,14 @@ footer {
 }
 
  #special-mentions {
-  padding: 1rem 25% 0rem 25%;
+  padding: 3rem 25% 0rem 25%;
  }
 
  #speakers-section {
   padding: 0rem 7rem;
  }
 
-
+ #see-past-header {
+  padding: 3rem 0rem;
+ }
 }
