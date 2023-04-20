@@ -56,11 +56,10 @@ const cardsContainer = document.querySelector('.cards-container');
 const guestSpeakers = (arr) => {
   for (let i = 0; i < arr.length; i += 1) {
     const speakerDetails = arr[i];
-    console.log(speakerDetails);
     const card = document.createElement('div');
     card.className = 'cards';
     card.classList.add('mobile-cards');
-    card.innerHTML = `<img class="speaker-image" src=${speakerDetails.image.src}" alt="Speaker's Image"/>
+    card.innerHTML = `<img class="speaker-image" src=${speakerDetails.image.src} alt="Speaker's Image"/>
     <div class="speaker-details">
       <h3 class="sub-section-header-black">${speakerDetails.name}</h3>
       <p class="sub-section-text-black red-color"><i>${speakerDetails.honours}</i></p>
@@ -69,6 +68,7 @@ const guestSpeakers = (arr) => {
       </div>
       <p class="sub-section-text-black">${speakerDetails.books}</p>
     </div>`;
+    console.log(card);
     cardsContainer.appendChild(card);
   }
   return cardsContainer;
@@ -99,11 +99,10 @@ function guestSpeakersDesktop(arr) {
   for (let i = 0; i < arr.length; i += 1) {
     // const promise = new Promise()
     const speakerDetails = arr[i];
-    console.log(speakerDetails);
     const card = document.createElement('div');
     card.className = 'cards';
     card.classList.add('desktop-cards');
-    card.innerHTML = `<img class="speaker-image" src=${speakerDetails.image.src}" alt=${speakerDetails.name}/>
+    card.innerHTML = `<img class="speaker-image" src=${speakerDetails.image.src} alt=${speakerDetails.name}/>
     <div class="speaker-details">
       <h3 class="sub-section-header-black">${speakerDetails.name}</h3>
       <p class="sub-section-text-black red-color"><i>${speakerDetails.honours}</i></p>

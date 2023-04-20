@@ -477,11 +477,15 @@ footer {
  }
 
  .headline-section {
-  padding-top: 15%;
+  padding-top: 12%;
+ }
+
+ .headline-section-about {
+  padding-top: 8rem;
  }
 
  h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
  }
 
   .program-date {
@@ -508,7 +512,7 @@ footer {
 
  .program-list {
   flex-direction: row;
-  padding: 2rem 10%;
+  padding: 4rem 10%;
  }
 
  .program-list div {
@@ -577,7 +581,7 @@ footer {
 }
 
  #special-mentions {
-  padding: 5rem 25% 0rem 25%;
+  padding: 1rem 25% 0rem 25%;
  }
 
  #speakers-section {
