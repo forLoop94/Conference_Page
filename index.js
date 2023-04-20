@@ -1,6 +1,4 @@
-import { authors, seeMoreAuthors, fullAuthorList } from "./speakerData.js";
-
-console.log(authors)
+import { authors, seeMoreAuthors, fullAuthorList } from './speakerData.js';
 
 const main = document.querySelector('main');
 
@@ -32,24 +30,22 @@ const menu = () => {
   main.appendChild(modal);
 
   const hyperlinks = document.querySelectorAll('.hyperlink');
+  const menuList = document.querySelector('.menu-list');
 
   hyperlinks.forEach((link) => {
     link.addEventListener('click', () => {
       menuList.parentNode.remove();
-    })
-  })
+    });
+  });
 
   const close = document.querySelector('.close');
-  const menuList = document.querySelector('.menu-list');
 
   close.addEventListener('click', () => {
     menuList.parentNode.remove();
-  })
-}
+  });
+};
 
 hamburger.addEventListener('click', menu);
-
-
 
 const cardsContainer = document.querySelector('.cards-container');
 
@@ -68,16 +64,13 @@ const guestSpeakers = (arr) => {
       </div>
       <p class="sub-section-text-black">${speakerDetails.books}</p>
     </div>`;
-    console.log(card);
     cardsContainer.appendChild(card);
   }
   return cardsContainer;
-}
+};
 guestSpeakers(authors);
 
-
 // setTimeout(function() {guestSpeakers(authors)}, 3000);
-
 
 const seeMore = document.createElement('div');
 
@@ -93,7 +86,7 @@ const seeMoreBtn = document.querySelector('.see-more');
 seeMoreBtn.addEventListener('click', () => {
   guestSpeakers(seeMoreAuthors);
   seeMore.remove();
-})
+});
 
 function guestSpeakersDesktop(arr) {
   for (let i = 0; i < arr.length; i += 1) {
