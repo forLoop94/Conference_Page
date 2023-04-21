@@ -70,8 +70,6 @@ const guestSpeakers = (arr) => {
 };
 guestSpeakers(authors);
 
-// setTimeout(function() {guestSpeakers(authors)}, 3000);
-
 const seeMore = document.createElement('div');
 
 seeMore.innerHTML = `<div class="see-more flex justify-center">
@@ -90,7 +88,6 @@ seeMoreBtn.addEventListener('click', () => {
 
 function guestSpeakersDesktop(arr) {
   for (let i = 0; i < arr.length; i += 1) {
-    // const promise = new Promise()
     const speakerDetails = arr[i];
     const card = document.createElement('div');
     card.className = 'cards';

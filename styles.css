@@ -152,10 +152,19 @@ h1 {
   color: #515151;
 }
 
-.program-list img,
-h3,
-p {
-  margin: 0 1rem;
+.program-list h3 {
+ word-break: break-all;
+ width: 30%;
+}
+
+#special-mentions {
+  /* padding: 3rem 25% 0 25%; */
+  /* margin-top: 7rem; */
+}
+
+.program-list p {
+  width: 50%;
+  padding: 0.2rem;
 }
 
 .speaker-details h3,
@@ -186,8 +195,15 @@ p {
   flex-direction: column;
 }
 
-footer div {
-  margin-right: 2rem;
+.round {
+  border: 3px solid #282b32;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.footer-about {
+  justify-content: space-around;
+  align-items: center;
 }
 
 .program-list div {
@@ -220,7 +236,7 @@ footer div {
 .line-grey {
   height: 0.2rem;
   width: 2rem;
-  background-color: #a04038;
+  background-color: #EC5242;
   margin: 0 0 1.5rem 0;
 }
 
@@ -335,13 +351,17 @@ footer div {
   justify-content: center;
 }
 
+#partners {
+  padding: 2rem 0rem;
+}
+
 #partners li {
   list-style-type: none;
   margin: 0 2rem;
 }
 
 .footer-logo {
-  height: 70px;
+  height: 40px;
 }
 
 footer {
@@ -353,9 +373,9 @@ footer {
   justify-content: space-between;
 }
 
-.logo-text {
-  display: flex;
-  align-items: center;
+.copyrights {
+  font-weight: 700;
+  font-size: 12px;
 }
 
 /* .....menu...... */
@@ -402,7 +422,7 @@ footer {
 /* ......... */
 
 .partner-logo {
-  height: 4rem;
+  height: 3rem;
 }
 
 .display-none,
@@ -507,7 +527,7 @@ footer {
   }
 
   .headline-section-about {
-    padding-top: 8rem;
+    padding: 8rem 0rem;
   }
 
   h1 {
@@ -539,27 +559,39 @@ footer {
   }
 
   .desktop-program-section-footer,
-  .footer-home,
   .desktop-cards {
     display: flex;
   }
 
+  .footer-home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
   .program-list {
-    flex-direction: row;
-    padding: 4rem 10%;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    row-gap: 2px;
+    /* flex-direction: row;*/
+    padding: 2rem 10%; 
+  }
+
+  .program-list h3, .program-list p {
+    width: 100%;
   }
 
   .program-list div {
     flex-direction: column;
-    padding: 0 0 1rem 0;
-    margin: 0.2rem;
+    padding: 0.4rem;
+    margin: 0.06rem;
   }
-
+/* 
   .program-list img,
   h3,
   p {
     justify-content: center;
-  }
+  } */
 
   .program-description {
     text-align: center;
@@ -577,18 +609,14 @@ footer {
 
   .footer-about {
     padding: 1rem 20%;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .footer-about,
-  .footer-about div {
+  .footer-about div, .footer-about h3  {
     background-color: #2c2c2c;
     color: white;
-    flex: 1;
-  }
-
-  .footer-text {
-    display: block;
-    padding-top: 0.5rem;
   }
 
   .main-paragragh-container {
@@ -604,7 +632,8 @@ footer {
   }
 
   .about-main-paragraph {
-    margin: 0 0 2rem 0;
+    width: 80%;
+    margin-left: 0;
   }
 
   .simple-cards {
