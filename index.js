@@ -11,6 +11,9 @@ const menu = () => {
   <div class="close flex">
     <p>X</p>
   </div>
+  <li><a class='hyperlink' href="index.html">Home <div class="middle-underline flex justify-center">
+      <div class="line"></div>
+    </div></a></li>
   <li><a class='hyperlink' href="index2.html">About <div class="middle-underline flex justify-center">
     <div class="line"></div>
   </div></a></li>
@@ -21,9 +24,6 @@ const menu = () => {
       <div class="line"></div>
     </div></a></li>
     <li><a class='hyperlink' href="index2.html#partners">Sponsors <div class="middle-underline flex justify-center">
-      <div class="line"></div>
-    </div></a></li>
-    <li><a class='hyperlink' href="index2.html#see-past-header">News <div class="middle-underline flex justify-center">
       <div class="line"></div>
     </div></a></li>
   </ul>`;

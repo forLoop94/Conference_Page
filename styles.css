@@ -95,7 +95,7 @@ h1 {
 }
 
 .about-main-paragraph {
-  margin: 2rem 0 4rem 0rem;
+  margin: 2rem 0rem 4rem 0rem;
   background-color: white;
 }
 
@@ -144,7 +144,7 @@ h1 {
 }
 
 .sub-section-text-black {
-  font-size: 12px;
+  font-size: 10px;
   color: black;
 }
 
@@ -156,12 +156,6 @@ h1 {
 .program-list h3 {
   word-break: break-all;
   width: 30%;
-}
-
-#special-mentions {
-  /* padding: 3rem 25% 0 25%; */
-
-  /* margin-top: 7rem; */
 }
 
 .program-list p {
@@ -220,12 +214,14 @@ h1 {
 
 .join-btn {
   justify-content: center;
-  margin: 2rem;
+  margin: 2rem 0rem;
 }
 
 .join-btn p {
   background-color: #ff4f38;
-  padding: 1.5rem 6rem;
+  padding: 1.5rem 4rem;
+  text-align: center;
+  font-size: 12px;
 }
 
 .line,
