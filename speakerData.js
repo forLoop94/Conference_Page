@@ -108,7 +108,7 @@ const fullAuthorList = [
       src: 'images/mbue2.jpeg',
       alt: '',
     },
-  }
+  },
 ];
 
 export { authors, seeMoreAuthors, fullAuthorList };
