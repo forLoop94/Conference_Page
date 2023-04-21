@@ -255,12 +255,32 @@ h1 {
   align-items: center;
 }
 
+.image-container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
 .speaker-image {
-  width: 40%;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+}
+
+.mozaic {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .speaker-details {
   margin: 0 1rem;
+  width: 60%;
 }
 
 #speakers-section {

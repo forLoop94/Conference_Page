@@ -12,7 +12,7 @@ const authors = [
     honours: "BBc's 100 women 0f 2021",
     books: 'Notable Works: Purple Hibiscus, Americanah, The thing around your neck, We should all be feminists, Half of the Yellow sun,  Dear Ijeawele, or A Feminist Manifesto in Fifteen Suggestions, That harmattan morning',
     image: {
-      src: 'https://guardian.ng/wp-content/uploads/2020/04/Chimamanda-Adichie-e1584458115515-1062x598.jpg',
+      src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1yyQYaY4itfIHbw0vorN-ZCUmY4-Qk82iNQ&usqp=CAU',
     },
   },
 ];
@@ -70,7 +70,7 @@ const fullAuthorList = [
     honours: "BBc's 100 women 0f 2021",
     books: 'Notable Works: Purple Hibiscus, Americanah, The thing around your neck, We should all be feminists, Half of the Yellow sun,  Dear Ijeawele, or A Feminist Manifesto in Fifteen Suggestions, That harmattan morning',
     image: {
-      src: 'https://guardian.ng/wp-content/uploads/2020/04/Chimamanda-Adichie-e1584458115515-1062x598.jpg',
+      src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1yyQYaY4itfIHbw0vorN-ZCUmY4-Qk82iNQ&usqp=CAU',
     },
   },
   {

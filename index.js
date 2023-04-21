@@ -55,7 +55,10 @@ const guestSpeakers = (arr) => {
     const card = document.createElement('div');
     card.className = 'cards';
     card.classList.add('mobile-cards');
-    card.innerHTML = `<img class="speaker-image" src=${speakerDetails.image.src} alt="Speaker's Image"/>
+    card.innerHTML = `<div class="image-container">
+    <img class="speaker-image" src=${speakerDetails.image.src} alt="Speaker's Image"/>
+    <img class="mozaic" src="images/mozaic_thumbnail (1).png" alt="Speaker's Image">
+  </div>
     <div class="speaker-details">
       <h3 class="sub-section-header-black">${speakerDetails.name}</h3>
       <p class="sub-section-text-black red-color"><i>${speakerDetails.honours}</i></p>
@@ -92,7 +95,10 @@ function guestSpeakersDesktop(arr) {
     const card = document.createElement('div');
     card.className = 'cards';
     card.classList.add('desktop-cards');
-    card.innerHTML = `<img class="speaker-image" src=${speakerDetails.image.src} alt=${speakerDetails.name}/>
+    card.innerHTML = `<div class="image-container">
+    <img class="speaker-image" src=${speakerDetails.image.src} alt="Speaker's Image"/>
+    <img class="mozaic" src="images/mozaic_thumbnail (1).png" alt="Speaker's Image">
+  </div>
     <div class="speaker-details">
       <h3 class="sub-section-header-black">${speakerDetails.name}</h3>
       <p class="sub-section-text-black red-color"><i>${speakerDetails.honours}</i></p>
