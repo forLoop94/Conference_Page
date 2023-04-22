@@ -29,6 +29,7 @@ nav {
   justify-content: space-between;
   padding-right: 45%;
   animation: nav-load 500ms;
+  z-index: 2;
 }
 
 .logo-mobile {
