@@ -67,7 +67,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-  height: 125vh;
+  height: 115vh;
 }
 
 .headline-section {
@@ -631,7 +631,7 @@ footer {
   }
 
   header {
-    height: 120vh;
+    height: 130vh;
   }
 
   .pad-top {
