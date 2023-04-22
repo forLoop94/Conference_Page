@@ -84,7 +84,7 @@ const fullAuthorList = [
   },
   {
     name: 'Ayi Kwei Armah',
-    honours: 'Nobel Laurette 1975',
+    honours: 'PEN/WALKER International Price for Literature',
     books: 'Notable Works: The Beautyful Ones Are Not Yet Born, Fragments, Why Are We So Blest?, Two Thousand Seasons, The Healers, The Resolutionaries',
     image: {
       src: 'https://static.yabiladi.com/files/articles/85703_40d8d2c243f54ef1c242b7df3807452b20191117164915_thumb_565.jpg',
