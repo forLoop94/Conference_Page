@@ -1,4 +1,4 @@
-import { authors, seeMoreAuthors, fullAuthorList } from './speakerData.js';
+import { fullAuthorList } from './speakerData.js';
 
 const main = document.querySelector('main');
 
@@ -62,4 +62,3 @@ const guestSpeakers = (arr) => {
   return cardsContainer;
 };
 guestSpeakers(fullAuthorList);
-

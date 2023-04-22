@@ -12,6 +12,7 @@
 body {
   justify-content: center;
   width: 100%;
+
   --nav-load-time: 500ms;
 }
 
@@ -377,7 +378,7 @@ h1 {
 }
 
 .menu-list li {
-  margin: 0rem 0rem;
+  margin: 0 0;
   display: flex;
   justify-content: flex-start;
 }
@@ -412,13 +413,12 @@ footer {
 /* .....menu...... */
 
 .menu {
-  position: relative;
-  padding: 8rem 0rem;
+  padding: 8rem 0;
   background-color: #282b32;
-  height: 100vh;
   position: fixed;
   top: 0;
   width: 60%;
+  height: 100vh;
   z-index: 3;
   animation: modal 500ms;
   animation-fill-mode: forwards;
@@ -578,20 +578,20 @@ footer {
     z-index: 2;
   }
 
-  .desktop-nav li {
-    padding: 0.6rem 1rem;
-  }
-
-  .desktop-nav li:hover {
-    background-color: rgb(0, 0, 0, 0.05);
-  }
-
   .desktop-nav ul,
   li {
     list-style-type: none;
     margin-right: 1rem;
     align-items: center;
     cursor: pointer;
+  }
+
+  .desktop-nav li {
+    padding: 0.6rem 1rem;
+  }
+
+  .desktop-nav li:hover {
+    background-color: rgb(0, 0, 0, 0.05);
   }
 
   .desktop-nav a {
@@ -610,12 +610,19 @@ footer {
     width: 50px;
     height: 50px;
     background: transparent;
+    transition: width 500ms, height 500ms;
+  }
+
+  .logo:hover {
+    width: 60px;
+    height: 60px;
   }
 
   .mobile-nav,
   .partners-about,
   .join-btn,
-  .see-more, .menu {
+  .see-more,
+  .menu {
     display: none;
   }
 
